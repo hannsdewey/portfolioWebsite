@@ -116,3 +116,48 @@ nav ul li a:hover {
   color: rgba(255, 255, 255);
   text-shadow: 0 0 5px white;
 }
+.hero .container .ucc-logo {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: block;
+}
+
+.hero-education {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  height: 100vh; /* Full screen height */
+  color: white;
+  text-align: justify;
+  text-justify: inter-word;
+  padding-bottom: 150px; /* Space for the footer */
+  box-sizing: border-box; /* Ensures padding doesn’t break layout */
+  overflow: hidden;
+}
+
+.hero-education .container {
+  display: flex;
+  background-color: rgb(255 255 255 / 0.16);
+  backdrop-filter: blur(10px);
+  padding: 50px;
+  border-radius: 20px;
+  gap: 30px;
+  width: 90%;
+  max-width: 1000px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); /* Optional: soft shadow */
+}
+
+.hero-education .ucc-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.hero-education .text-content {
+  flex: 1;
+}
+.hero-education .text-content h2 {
+  margin-bottom: 20px;
+}
