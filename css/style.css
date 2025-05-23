@@ -1,0 +1,118 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden; /* Prevent vertical and horizontal scroll */
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-image: url("/portfolio/assets/images/coolbackgrounds-gradient-salt.png");
+  background-size: cover; /*  Make sure the image covers the entire area  */
+  background-repeat: no-repeat; /*  Don't repeat the image */
+  background-attachment: fixed; /*  Keep the image fixed while scrolling */
+}
+
+/* Container (optional global layout) */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Header */
+header {
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin-left: 20px;
+  display: inline-block;
+}
+
+nav ul {
+  list-style: none;
+  margin-right: 20px;
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ccc;
+  color: rgba(255, 255, 255);
+  text-shadow: 0 0 5px white;
+}
+
+/* Hero Section */
+.hero {
+  color: white;
+  height: 100vh; /* Full screen */
+  width: 100vw; /* Full width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 110px;
+}
+
+.hero .container {
+  display: block;
+  margin: 0 auto;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #fff;
+  color: #222;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.hero .btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+/* Social Icons */
+.social-icons {
+  margin: 20px 0;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 12px;
+  font-size: 28px;
+  color: #fff;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ccc;
+  transform: scale(1.2);
+  color: rgba(255, 255, 255);
+  text-shadow: 0 0 5px white;
+}
