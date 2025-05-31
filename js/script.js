@@ -1,14 +1,27 @@
-// Set current year in footer
-document.getElementById("year").textContent = new Date().getFullYear();
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("External JS Loaded");
 
-document.querySelectorAll(".project-item").forEach((item) => {
-  item.addEventListener("click", function () {
-    // Remove active class from all
-    document.querySelectorAll(".project-item").forEach((el) => {
-      el.classList.remove("active-project");
+  const filterButtons = document.querySelectorAll(".project-item");
+  const projectCards = document.querySelectorAll(".project-card");
+
+  console.log("Buttons:", filterButtons.length);
+  console.log("Cards:", projectCards.length);
+
+  filterButtons.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      const selectedCategory = btn.textContent.toLowerCase();
+      console.log("Clicked:", selectedCategory);
+
+      projectCards.forEach((card) => {
+        const cardCategory = card.dataset.category.toLowerCase();
+        card.style.display =
+          selectedCategory === "all" || cardCategory === selectedCategory
+            ? "flex"
+            : "none";
+      });
+
+      filterButtons.forEach((b) => b.classList.remove("active-project"));
+      btn.classList.add("active-project");
     });
-
-    // Add active class to the clicked item
-    this.classList.add("active-project");
   });
 });
