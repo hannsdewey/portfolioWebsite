@@ -12,7 +12,7 @@ body {
   font-family: "Segoe UI", sans-serif;
   line-height: 1.6;
   color: #333;
-  background-image: url("/assets/images/coolbackgrounds-gradient-salt.png");
+  background-image: url("/portfolio/assets/images/coolbackgrounds-gradient-salt.png");
   background-size: cover; /*  Make sure the image covers the entire area  */
   background-repeat: no-repeat; /*  Don't repeat the image */
   background-attachment: fixed; /*  Keep the image fixed while scrolling */
